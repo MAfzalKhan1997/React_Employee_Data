@@ -116,95 +116,6 @@ logout(){
   })  
 }
 
-addEmployDiv(){
-  const {currentIndex} = this.state;
- return( <div id="addEmployDiv">
-
-<input 
-          type="text"
-          placeholder="First Name"
-          onChange={(e)=>this.setState({fName:e.target.value})}
-          value={this.state.fName}
-          /> 
-<input 
-          type="text"
-          placeholder="Last Name"
-          onChange={(e)=>this.setState({lName:e.target.value})}
-          value={this.state.lName}
-          />
-<input 
-          type="email"
-          placeholder="Email"
-          onChange={(e)=>this.setState({email:e.target.value})}
-          value={this.state.email}
-          />
-<input 
-          type="number"
-          placeholder="Salary"
-          onChange={(e)=>this.setState({salary:e.target.value})}
-          value={this.state.salary}
-          />
-<input 
-          type="date"
-          placeholder="Joining Date"
-          onChange={(e)=>this.setState({joiningDate:e.target.value})}
-          value={this.state.joiningDate}
-          />
-
-      {currentIndex === null ? <button id="addBtn" onClick={()=>this.add()}>Add</button>
-      :
-      <button id="saveBtn" onClick={()=>this.updateEmploy(currentIndex)}>Save Changes</button>}
-      <button id="closeBtn" onClick={()=>this.cancel()}>Close</button>
-   </div>
-   ) 
-}
-
-add(){
-  
-  const {employArr,fName,lName,email,salary,joiningDate} = this.state;
-
-  let employDetails = {
-    fName,
-    lName,
-    email,
-    salary,
-    joiningDate
-  }
-
-  employArr.push(employDetails);
-  console.log(employArr);
-
-  swal({
-    title: "Done!",
-    text: "Employ Added!",
-    icon: "success",
-    button: "Ok",
-  });
-
-  this.setState({
-    fName:"", 
-    lName:"",
-    email:"",
-    salary:"",
-    joiningDate:""
-  })
-
-}
-
-cancel(){
- this.setState({
-   addEmployDiv:false,
-   employData:true,
-   currentIndex:null,
-
-    fName:"", 
-    lName:"",
-    email:"",
-    salary:"",
-    joiningDate:""
-  }) 
-}
- 
 employData(){
 
   const {employArr} = this.state;
@@ -309,6 +220,97 @@ this.setState({
   })
 console.log(index);
 }
+
+addEmployDiv(){
+  const {currentIndex} = this.state;
+ return( <div id="addEmployDiv">
+
+<input 
+          type="text"
+          placeholder="First Name"
+          onChange={(e)=>this.setState({fName:e.target.value})}
+          value={this.state.fName}
+          /> 
+<input 
+          type="text"
+          placeholder="Last Name"
+          onChange={(e)=>this.setState({lName:e.target.value})}
+          value={this.state.lName}
+          />
+<input 
+          type="email"
+          placeholder="Email"
+          onChange={(e)=>this.setState({email:e.target.value})}
+          value={this.state.email}
+          />
+<input 
+          type="number"
+          placeholder="Salary"
+          onChange={(e)=>this.setState({salary:e.target.value})}
+          value={this.state.salary}
+          />
+<input 
+          type="date"
+          placeholder="Joining Date"
+          onChange={(e)=>this.setState({joiningDate:e.target.value})}
+          value={this.state.joiningDate}
+          />
+
+      {currentIndex === null ? <button id="addBtn" onClick={()=>this.add()}>Add</button>
+      :
+      <button id="saveBtn" onClick={()=>this.updateEmploy(currentIndex)}>Save Changes</button>}
+      <button id="closeBtn" onClick={()=>this.cancel()}>Close</button>
+   </div>
+   ) 
+}
+
+add(){
+  
+  const {employArr,fName,lName,email,salary,joiningDate} = this.state;
+
+  let employDetails = {
+    fName,
+    lName,
+    email,
+    salary,
+    joiningDate
+  }
+
+  employArr.push(employDetails);
+  console.log(employArr);
+
+  swal({
+    title: "Done!",
+    text: "Employ Added!",
+    icon: "success",
+    button: "Ok",
+  });
+
+  this.setState({
+    fName:"", 
+    lName:"",
+    email:"",
+    salary:"",
+    joiningDate:""
+  })
+
+}
+
+cancel(){
+ this.setState({
+   addEmployDiv:false,
+   employData:true,
+   currentIndex:null,
+
+    fName:"", 
+    lName:"",
+    email:"",
+    salary:"",
+    joiningDate:""
+  }) 
+}
+ 
+ 
 
 renderHead(){
 
