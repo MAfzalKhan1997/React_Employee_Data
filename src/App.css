@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 2em;
+  margin-bottom: 4%;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.employTable{
+border-collapse: collapse;
+  text-align: center;
+  width: 90%;
+  font-size: 17px;
+  
+}
+
+#employData{
+  overflow-x: auto;
+}
+
+th, td{
+  /* background-color: yellow; */  
+  padding: 15px;
+  border-bottom: 1px solid rgba(66, 66, 66, 0.199);
+
+} 
+
+tr:nth-child(even) {
+  /* background-color: #f2f2f2; */
+  background-color: yellow;
+}
+
+ 
+#loginDiv , #addEmployDiv{
+  background-color:rgb(255, 255, 255); 
+  margin: 0 auto;
+  width: 100%;
+  max-width:500px;
+  /* box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.562); */
+}
+
+ 
+button{
+
+    outline: none;
+    font-size: 20px;
+    border:none;
+    width: 90%;
+    padding: 10px;
+    margin-top: 25px;
+    color: white;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#loginBtn,#addBtn{
+  background-color: rgb(79, 79, 218);
+  font-size: 15px;
+}
+
+#closeBtn{
+  background-color: rgb(50, 50, 56);
+  font-size: 15px;
+}
+
+#saveBtn{
+  background-color: rgb(52, 160, 67);
+  font-size: 15px;
+}
+
+#editBtn{
+  background-color: rgb(0, 119, 113);
+  font-size: 15px;
+  width: 60px;
+  margin-top: 0px;
+}
+
+#delBtn{
+  background-color: rgb(233, 0, 0);
+  font-size: 15px;
+  width: 60px;
+  margin-top: 0px;  
+}
+
+#logoutBtn{
+  /* color: black;  */
+  background-color: rgb(50, 50, 56);
+  border-radius: 0px;
+   /* margin-top: -50px;
+  margin-left: 3%; */
+  top:-25px;
+  width: 100px;
+  font-size: 15px;
+  /* float: left;  */
+  display: block;
+  position: fixed;
+}
+
+#plusBtn{
+ 
+  font-size: 25px;
+  z-index: 1;
+  position: fixed;
+  bottom: 20px;
+  right: 20px; 
+  background-color: rgb(50, 50, 56);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  /* display: none; */
+  
+}
+ 
+input{
+  background: none;
+  height: 30px;
+  width: 90% ;
+  padding: 5px 0px ;
+  margin: 10px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.432);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 2px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+  background : white;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(68, 68, 68); 
+}
