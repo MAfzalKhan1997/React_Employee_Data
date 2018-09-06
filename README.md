@@ -1,6 +1,5 @@
 Live Firebase Link:https://employees-mak.firebaseapp.com
-<br/>
-<br/>
+<br/> 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
