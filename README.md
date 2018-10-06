@@ -1,5 +1,5 @@
-Live View:https://employees-mak.firebaseapp.com
-<br/> 
+Live : https://employees-mak.firebaseapp.com
+ 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
